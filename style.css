@@ -16,11 +16,12 @@ body{
 }
 
 .list{
+    flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 40rem;
-    height: 30rem;
+    height: 25rem;
     border-radius: 25px;
     border: 1px solid #F5D7DB;
     background: #F5D7DB;
@@ -36,6 +37,31 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 0 0.5rem;
+
+}
+
+.todoTitle {
+    display: flex;
+    align-items: center;
+    margin-right: 22rem;
+}
+
+h3{
+    color: #451952;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: capitalize;
+    display: flex;
+    order: -1;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.listImage{
+    width: 1.7rem;
+    height: 1.8rem;
 }
 
 .button{
@@ -47,7 +73,7 @@ body{
 }
 
 .input{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
     border: none;
     height: 3rem;
     width: 100%;
@@ -65,4 +91,42 @@ body{
     height: 1.2em;
     margin-top: 0.2rem;
     
+}
+
+.task{
+    display: flex;
+}
+
+ul li{
+    list-style: none;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    position: relative;
+    margin-right: 22rem;
+    margin-top: 1rem;
+
+}
+
+ul li::before{
+    content: "";
+    position: absolute;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background-image: url(check_empty.png);
+    background-size: cover;
+    background-position: center;
+    top:12px;
+    left: -30px;
+}
+
+ul li.checked{
+    color: #6c45bcf9;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    color: #6c45bcf9;
+    background-image: url(check_full.png);
 }
