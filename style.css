@@ -118,7 +118,7 @@ ul li::before{
     background-size: cover;
     background-position: center;
     top:5px;
-    left: -30px;
+    right: 30px;
 }
 
 ul li.checked{
