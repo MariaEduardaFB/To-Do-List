@@ -117,7 +117,7 @@ ul li::before{
     background-image: url(images/check_empty.png);
     background-size: cover;
     background-position: center;
-    top:12px;
+    top:5px;
     left: -30px;
 }
 
@@ -130,3 +130,17 @@ ul li.checked::before{
     color: #6c45bcf9;
     background-image: url(images/check_full.png);
 }
+
+ul li span{
+    position: absolute;
+    left: 23rem;
+    top: 1px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #06142E;
+    line-height: 50px;
+    text-align: center;
+}
+
+
