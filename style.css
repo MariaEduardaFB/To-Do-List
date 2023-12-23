@@ -19,9 +19,9 @@ body{
     flex-direction: column;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     width: 40rem;
-    height: 25rem;
+    min-height: 25rem;
     border-radius: 25px;
     border: 1px solid #F5D7DB;
     background: #F5D7DB;
