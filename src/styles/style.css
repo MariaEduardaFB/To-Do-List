@@ -95,7 +95,7 @@ h3{
 
 .task{
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     width: 300px;
     
 }
@@ -114,40 +114,23 @@ ul li{
     
 }
 
-ul li::before{
-    content: "";
-    display: flex;
-    height: 1.5rem;
-    width: 1.5rem;
+
+.color-button {
+    background-color: #F5D7DB; /* Cor de fundo padrão */
+    color: #ffffff; /* Cor do texto */
+    border-color: #7d5cc0;
     border-radius: 50%;
-    background-image: url(/check_empty.png);
-    background-size: cover;
-    background-position: center;
-    
-    
-}
-
-ul li.checked{
-    color: #6c45bcf9;
-    text-decoration: line-through;
-}
-
-ul li.checked::before{
-    color: #6c45bcf9;
-    background-image: url(images/check_full.png);
-}
-
-ul li span{
+    padding: 0.5rem;
+    margin-right: 1rem; /* Espaçamento à direita para separar do conteúdo */
+    cursor: pointer;
+    height: 2rem;
+    width: 2rem;
     display: flex;
-    right: 23rem;
-    margin-top: -0.5rem;
-    width: 40px;
-    height: 40px;
-    font-size: 22px;
-    color: #06142E;
-    line-height: 50px;
-    margin-left: 25rem;
-
 }
+
+.color-button.clicked {
+    background-color:#7d5cc0 ; /* Cor de fundo quando clicado */
+}
+
 
 
