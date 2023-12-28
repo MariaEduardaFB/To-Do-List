@@ -9,7 +9,6 @@ add.addEventListener("click", () => {
     } else {
         const newElement = document.createElement("li");
         
-
         // Adiciona o botão "Colorize" antes do texto da tarefa
         const colorButton = document.createElement("button");
         colorButton.innerHTML = "";
