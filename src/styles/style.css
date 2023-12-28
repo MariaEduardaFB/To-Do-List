@@ -114,7 +114,6 @@ ul li{
     
 }
 
-
 .color-button {
     background-color: #F5D7DB; /* Cor de fundo padrão */
     color: #ffffff; /* Cor do texto */
@@ -126,11 +125,25 @@ ul li{
     height: 2rem;
     width: 2rem;
     display: flex;
+    margin-top: -0.3rem;
 }
 
 .color-button.clicked {
     background-color:#7d5cc0 ; /* Cor de fundo quando clicado */
 }
+
+.remove-tasks {
+    background-color: #ff634700; /* Cor de fundo do botão */
+    color: #5522BB5B; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 50%; /* Borda arredondada para um estilo mais amigável */
+    padding: 0.5rem; /* Espaçamento interno para melhor aparência */
+    cursor: pointer; /* Indica que é clicável */
+    margin-left: 21rem; /* Ajuste de margem à esquerda para espaçamento entre o botão e o texto da tarefa */
+}
+
+
+
 
 
 
