@@ -146,6 +146,37 @@ ul li{
     
 }
 
+@media only screen and (max-width: 600px) {
+    /* Estilos específicos para dispositivos com largura máxima de 600px */
+    .list {
+        width: 400px;
+        height: 500px;
+        max-width: none; /* Remover a largura máxima em dispositivos móveis */
+    }
+
+    .search, .task, ul li {
+        width: 300px;
+        max-width: none;
+        margin-top: 1rem;
+    }
+
+    .todoTitle {
+        flex-direction: column; /* Coloca os elementos em uma coluna em telas menores */
+        align-items: flex-start; /* Alinha os itens à esquerda em telas menores */
+        width: 200px;
+        margin-left: 10rem;
+    }
+    .h3 {
+        margin-right: 0.5rem; 
+    }
+
+    .todoTitle img.listImage {
+        margin-left: 8rem; /* Adiciona margem à esquerda para separar a imagem do texto */
+        margin-top: -3rem;
+        padding:0;
+    }
+}
+
 
 
 
